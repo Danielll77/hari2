@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Inventaris Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Sistem Inventaris Barang</header>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Daftar Barang</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="search-sort-container">
+            <input type="text" id="search-input" placeholder="Cari barang..." onkeyup="searchBarang()">
+            <select id="sort-select" onchange="sortBarang()">
+                <option value="nama">Urutkan: Nama</option>
+                <option value="harga">Urutkan: Harga</option>
+                <option value="stok">Urutkan: Stok</option>
+            </select>
+        </div>
+        <div class="barang-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
